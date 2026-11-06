@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071225">
+<meta name="description" content="منصة HAMO_ELKING المجانية لطلاب تانية ثانوي أزهر وبكالوريا 2027">
+<title>HAMO_ELKING | تانية ثانوي أزهر وبكالوريا 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050b18;--panel:#101d33;--panel2:#142640;--line:#294465;--gold:#f6c65b;--cyan:#56d9ef;--muted:#aab8cc;--green:#42dfaa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 85% 34%,#102c53 0,transparent 42%),radial-gradient(ellipse at 8% 75%,#102447 0,transparent 40%),var(--bg);color:#f5f7ff;font-family:"Cairo",Tahoma,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(5,11,24,.94);backdrop-filter:blur(16px);border-bottom:1px solid #294465}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:55px;height:55px;border-radius:17px;background:linear-gradient(145deg,#153b68,#08152a);border:1px solid #4974a0;display:grid;place-items:center;font-size:25px}
+.brand-name{font-size:clamp(19px,3vw,27px);font-weight:900}.brand-name span{color:var(--gold)}.tagline{font-size:12px;color:var(--muted)}
+.nav-links{display:flex;gap:18px;color:#c4d1e4;font-size:14px}.nav-links a:hover{color:var(--gold)}
+.menu-btn{border:1px solid #385777;border-radius:13px;background:#11243e;color:white;font-size:23px;padding:8px 14px;cursor:pointer}
+.mobile-menu{display:none;position:absolute;top:82px;left:4%;right:4%;padding:14px;background:#0d1b30;border:1px solid #315174;border-radius:18px}.mobile-menu.open{display:grid;gap:10px}.mobile-menu a{padding:8px}
+.auth-area{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.user-label{font-size:12px;color:#b8c8dc;max-width:150px;overflow-wrap:anywhere}
+.btn{border:0;border-radius:14px;padding:11px 18px;font:800 14px "Cairo";cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(115deg,#ffe29a,#e8a928);color:#101827}.secondary{background:#122842;border:1px solid #41648a;color:#f2f6ff}
+.hero{min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 0 55px}
+.hero-inner{max-width:850px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-weight:800;background:#102844aa;border:1px solid #245276;border-radius:99px;padding:8px 17px}
+.dot{width:9px;height:9px;background:var(--green);border-radius:50%;box-shadow:0 0 16px var(--green)}
+h1{font-size:clamp(42px,8vw,78px);line-height:1.25;margin:25px 0 16px;font-weight:900}.gradient{background:linear-gradient(90deg,#4bd4ee,#a4e4bd,#f5c45a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:clamp(16px,2.5vw,22px);line-height:2;color:#b6c4d8;margin:0 auto 25px;max-width:790px}
+.actions,.quick{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.quick{margin-top:35px}.pill{border:1px solid #294766;background:#0e1b30;color:#c8d5e6;border-radius:99px;padding:9px 17px}
+.section{padding:45px 0}.section-head{text-align:center;margin-bottom:25px}.section-head h2{font-size:clamp(26px,4vw,36px);margin:0 0 7px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:linear-gradient(145deg,rgba(20,37,62,.96),rgba(11,21,39,.97));border:1px solid #2b496b;border-radius:25px;padding:23px;display:flex;gap:18px;align-items:flex-start;min-height:190px}
+.card-icon{width:72px;height:72px;flex:0 0 72px;border-radius:20px;background:#17436d;display:grid;place-items:center;font-size:34px}
+.card h3{font-size:21px;margin:0 0 8px}.card p{color:#aebbd0;line-height:1.9;margin:0 0 14px;font-size:14px}
+.status{display:inline-flex;border-radius:99px;padding:6px 13px;font-weight:800;font-size:13px;background:#153e36;color:#74e6b7;border:1px solid #287c65}.soon{background:#40351c;color:#ffda83;border-color:#80652d}
+.resource-list{display:grid;gap:10px;margin-top:15px}.resource{background:#0c192c;border:1px solid #294565;border-radius:14px;padding:13px;color:#e8eef8;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.resource small{display:block;color:#92a6bf;font-size:12px}.resource .arrow{color:var(--gold);font-size:20px}
+.panel{background:linear-gradient(145deg,#12243d,#0b172a);border:1px solid #2c4b6e;border-radius:25px;padding:22px;max-width:900px;margin:auto}
+.result-list,.task-list{display:grid;gap:9px}.result-row,.task-row{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid #2a4564;border-radius:14px;background:#0b192c}.empty{text-align:center;color:#9fb0c7;padding:22px}
+.planner-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}.planner-top h3{font-size:22px;margin:0}.planner-top p,.note{color:var(--muted);font-size:13px;line-height:1.8}
+.progress-wrap{min-width:130px;text-align:center;color:var(--gold);font-weight:800}.progress{height:8px;background:#263c57;border-radius:99px;overflow:hidden;margin-top:7px}.progress i{display:block;width:0;height:100%;background:linear-gradient(90deg,#43d8ef,#49dda5)}
+.study-form{display:grid;grid-template-columns:1fr 1.3fr 1fr .8fr .8fr auto;gap:8px}.study-form input,.study-form select,.auth-form input{width:100%;min-width:0;border:1px solid #355474;background:#091629;color:#f5f7ff;border-radius:11px;padding:11px;font:500 14px "Cairo";outline:none}
+.study-form .btn{font-size:13px;padding:9px 12px}.tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:16px 0;color:var(--muted);font-size:13px}
+.task-main{flex:1;min-width:0}.task-meta{font-size:12px;color:#9fb0c7}.task-row.done{opacity:.6}.task-row.done .task-name{text-decoration:line-through}.task-check{width:20px;height:20px;accent-color:#42dfaa}.task-delete{border:1px solid #70404b;color:#ff9aa7;background:#2a1723;border-radius:9px;padding:5px 9px}
+.timer-card{max-width:620px;margin:auto;text-align:center;background:linear-gradient(145deg,#142b49,#0a1729);border:1px solid #315477;border-radius:25px;padding:25px}
+.timer-label{color:var(--cyan);font-weight:800}.timer-display{font-size:clamp(55px,12vw,82px);font-weight:900;color:#fff;margin:5px 0 12px;font-variant-numeric:tabular-nums}
+.timer-actions,.timer-modes{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.timer-modes{margin-top:17px}.timer-mode.active{border-color:var(--gold);color:var(--gold)}
+.community{margin:35px auto 60px;padding:28px;border:1px solid #2b4c70;border-radius:25px;background:linear-gradient(120deg,#112944,#0c182b);text-align:center}.community h2{font-size:26px;margin:0 0 8px}.community p{color:var(--muted)}
+footer{border-top:1px solid #263d59;padding:25px 0 85px;color:#93a6bf;text-align:center;font-size:14px}.developer{color:var(--gold);font-weight:800}
+.float{position:fixed;bottom:17px;left:12px;z-index:15;background:#142c49;border:1px solid #4b7ca7;border-radius:15px;padding:10px 15px;box-shadow:0 10px 35px #0008;font-weight:800}.float span{color:var(--gold)}
+.modal{position:fixed;inset:0;z-index:100;background:#020711df;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{width:min(440px,100%);background:#10213a;border:1px solid #42658a;border-radius:22px;padding:22px;box-shadow:0 25px 80px #000b}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h2{margin:0;font-size:23px}.close{background:transparent;color:white;border:0;font-size:26px;cursor:pointer}.auth-form{display:grid;gap:11px;margin-top:16px}.auth-form label{font-size:13px;color:#c5d2e4}.auth-form input{margin-top:5px}.auth-msg{font-size:13px;line-height:1.8;color:#b9cbe0;min-height:25px}.switch-auth{color:var(--cyan);background:none;border:0;font:700 14px "Cairo";cursor:pointer}
+@media(max-width:900px){.study-form{grid-template-columns:repeat(2,minmax(0,1fr))}.study-form .btn{grid-column:1/-1}}
+@media(max-width:760px){.nav-links{display:none}.cards{grid-template-columns:1fr}.card{min-height:0}.section{padding:35px 0}.hero{min-height:490px}.user-label{max-width:95px}}
+@media(max-width:520px){.nav{flex-wrap:wrap;padding:10px 0}.auth-area{width:100%;justify-content:center;padding-bottom:7px}.study-form{grid-template-columns:1fr 1fr}.study-form input:nth-child(2){grid-column:1/-1}.planner-top{display:block}.progress-wrap{margin-top:12px;text-align:right}.card{display:block}.card-icon{margin-bottom:13px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+  <a class="brand" href="#home"><div class="logo">👑</div><div><div class="brand-name">HAMO<span>_ELKING</span></div><div class="tagline">اتعلم ببلاش.. واطمح بلا حدود!</div></div></a>
+  <nav class="nav-links"><a href="#library">المكتبة</a><a href="#honor-board">المتفوقون</a><a href="#study-planner">جدول المذاكرة</a><a href="#community">مجتمعنا</a></nav>
+  <div class="auth-area">
+   <span class="user-label" id="userLabel">زائر</span>
+   <button class="btn primary" id="openAuth">دخول / حساب جديد</button>
+   <button class="btn secondary" id="logoutBtn" style="display:none">تسجيل خروج</button>
+  </div>
+ </div>
+ <nav class="mobile-menu" id="mobileMenu"><a href="#home">الرئيسية</a><a href="#library">المكتبة التعليمية</a><a href="#honor-board">لوحة الشرف</a><a href="#study-planner">جدول المذاكرة</a><a href="#study-tools">مؤقت المذاكرة</a><a href="#community">مجتمعنا</a></nav>
+</header>
+
+<main id="home">
+ <section class="hero wrap"><div class="hero-inner">
+  <div class="eyebrow"><i class="dot"></i> مجتمع واحد.. هدفه التفوق</div>
+  <h1>طريقك للتفوق<br><span class="gradient">بيبدأ من هنا.</span></h1>
+  <p>منصة HAMO_ELKING المجانية لطلاب تانية ثانوي أزهر وبكالوريا 2027! كتب ومحاضرات ومراجعات وامتحانات تساعدك تذاكر وتتفوق — كل اللي محتاجه في مكان واحد.</p>
+  <div class="actions"><a class="btn primary" href="#library">اكتشف المكتبة ←</a><a class="btn secondary" href="https://chat.whatsapp.com/LJsQBo2Ff76JbOHp3zpyrE" target="_blank" rel="noopener">ادخل جروب الواتساب</a></div>
+  <div class="quick"><a class="pill" href="#books">📚 كتب</a><a class="pill" href="#lectures">🎥 محاضرات</a><a class="pill" href="#summaries">📝 مراجعات</a><a class="pill" href="#exams">🎓 امتحانات</a></div>
+ </div></section>
+
+ <section class="section wrap" id="library"><div class="section-head"><h2>المكتبة التعليمية</h2><p>كل محتوى تانية ثانوي أزهر وبكالوريا 2027 في مكان واحد</p></div>
+  <div class="cards">
+   <article class="card" id="books"><div class="card-icon">📚</div><div><h3>كتب تانية ثانوي أزهر وبكالوريا 2027</h3><p>افتح مكتبة الكتب وشاهد الملفات المتاحة وحمّل ما تحتاجه.</p><span class="status">● متاح الآن</span><div class="resource-list"><a class="resource" href="https://drive.google.com/drive/folders/1pqbaqxZXcGsYs1v52mw77sEVqlBn8EXQ" target="_blank" rel="noopener"><span><b>افتح مكتبة الكتب</b><small>Google Drive</small></span><span class="arrow">↗</span></a></div></div></article>
+   <article class="card" id="lectures"><div class="card-icon">🎥</div><div><h3>المحاضرات</h3><p>قسم مخصص لمحاضرات شرح المواد بالفيديو. هنضيف المحاضرات تباعًا.</p><span class="status soon">⏳ انتظروا الإضافة</span><div class="resource-list"><a class="resource" href="https://drive.google.com/drive/folders/1AOizRPHweNQ25mi6A8r0iJo05gpp2u8u" target="_blank" rel="noopener"><span><b>افتح مجلد المحاضرات</b><small>Google Drive</small></span><span class="arrow">↗</span></a></div></div></article>
+   <article class="card" id="summaries"><div class="card-icon">📝</div><div><h3>ملخصات ومراجعات 2027</h3><p>ملخصات ومراجعات تساعدك تلم المنهج وتراجع بسهولة.</p><span class="status soon">⏳ جاري التجهيز</span><div class="resource-list"><a class="resource" href="https://drive.google.com/drive/folders/15tBjkE9b0pV6kmzPaht3FP42f63Yzf54" target="_blank" rel="noopener"><span><b>افتح مجلد المراجعات</b><small>Google Drive</small></span><span class="arrow">↗</span></a></div></div></article>
+   <article class="card" id="exams"><div class="card-icon">📋</div><div><h3>امتحانات وتدريبات 2027</h3><p>امتحانات وتدريبات تساعدك تراجع مستواك وتستعد بثقة.</p><span class="status soon">⏳ جاري التجهيز</span><div class="resource-list"><a class="resource" href="https://drive.google.com/drive/folders/1ed-nswqzdWJ7Pi3J7nZtCio5QeYxHL-v" target="_blank" rel="noopener"><span><b>افتح مجلد الامتحانات</b><small>Google Drive</small></span><span class="arrow">↗</span></a></div></div></article>
+  </div>
+ </section>
+
+ <section class="section wrap" id="honor-board"><div class="section-head"><h2>🏆 لوحة شرف المتفوقين</h2><p>أسماء ونتائج الطلاب التي أعلن عنها المطوّر</p></div><div class="panel"><div id="publicResults" class="result-list"><div class="empty">جاري تحميل لوحة الشرف...</div></div><p class="note">تُعرض هنا النتائج التي تم اعتماد نشرها فقط.</p></div></section>
+
+ <section class="section wrap" id="study-planner"><div class="section-head"><h2>📅 جدول مذاكرتك الإلكتروني</h2><p>نظّم وقتك، سجّل مهامك، وتابع إنجازك يومًا بيوم</p></div>
+  <div class="panel"><div class="planner-top"><div><h3>خطتك الأسبوعية</h3><p>أضف المادة والدرس والوقت، وحدد المهمة كمكتملة بعد المذاكرة.</p></div><div class="progress-wrap"><strong id="progressText">0% إنجاز</strong><div class="progress"><i id="progressBar"></i></div></div></div>
+   <form id="studyForm" class="study-form"><input id="taskSubject" required maxlength="45" placeholder="اسم المادة"><input id="taskTitle" required maxlength="70" placeholder="الدرس أو المهمة"><select id="taskDay" aria-label="اليوم"><option>السبت</option><option>الأحد</option><option>الإثنين</option><option>الثلاثاء</option><option>الأربعاء</option><option>الخميس</option><option>الجمعة</option></select><input id="taskTime" type="time" value="16:00" aria-label="وقت المذاكرة"><input id="taskDuration" type="number" min="5" max="600" value="60" aria-label="المدة بالدقائق"><button class="btn primary" type="submit">＋ أضف للمذاكرة</button></form>
+   <div class="tools"><button class="btn secondary" id="showAll" type="button">كل الأيام</button><button class="btn secondary" id="clearDone" type="button">حذف المنجز</button><span id="taskCount">0 مهمة</span></div>
+   <div id="taskList" class="task-list"><div class="empty">لسه مفيش مهام.. ابدأ بإضافة أول حصة مذاكرة 💪</div></div><div class="note">🔒 جدول المذاكرة يُحفظ على نفس المتصفح والجهاز حاليًا.</div>
+  </div>
+ </section>
+
+ <section class="section wrap" id="study-tools"><div class="section-head"><h2>⏱️ ركّز وذاكر بذكاء</h2><p>مؤقّت بومودورو يساعدك تذاكر على فترات مع راحة منتظمة</p></div><div class="timer-card">
+  <div class="timer-label" id="timerLabel">وقت التركيز</div><div class="timer-display" id="timerDisplay">25:00</div>
+  <div class="timer-actions"><button class="btn primary" id="timerStart">ابدأ</button><button class="btn secondary" id="timerPause">إيقاف مؤقت</button><button class="btn secondary" id="timerReset">إعادة</button></div>
+  <div class="timer-modes"><button class="pill timer-mode active" data-minutes="25" data-label="وقت التركيز">تركيز 25 دقيقة</button><button class="pill timer-mode" data-minutes="5" data-label="راحة قصيرة">راحة 5 دقائق</button><button class="pill timer-mode" data-minutes="15" data-label="راحة طويلة">راحة 15 دقيقة</button></div>
+ </div></section>
+
+ <section class="wrap community" id="community"><h2>طلاب تانية ثانوي أزهر وبكالوريا 2027.. هنا طريق التفوق 💙</h2><p>انضم لجروب HAMO_ELKING وتابع القناة عشان يوصلك كل جديد.</p><div class="actions"><a class="btn primary" href="https://chat.whatsapp.com/LJsQBo2Ff76JbOHp3zpyrE" target="_blank" rel="noopener">انضم لجروب الواتساب</a><a class="btn secondary" href="https://whatsapp.com/channel/0029VbCpDTQAInPuM64CGt3z" target="_blank" rel="noopener">تابع قناة الواتساب</a></div></section>
+</main>
+<footer><div class="wrap"><div><strong>HAMO_ELKING</strong> — اتعلم ببلاش واطمح بلا حدود</div><div style="margin:9px 0">المطور: <a class="developer" href="https://wa.me/201556673692" target="_blank" rel="noopener">01556673692</a></div><a class="btn secondary" href="https://wa.me/201556673692?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%85%D8%B7%D9%88%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%B5%D8%A9" target="_blank" rel="noopener">💬 تواصل مع المطور</a><div style="margin-top:18px">© 2026 HAMO_ELKING — جميع الحقوق محفوظة</div></div></footer>
+<a class="float" href="https://wa.me/201556673692" target="_blank" rel="noopener">💬 تواصل <span>مع المطور</span></a>
+
+<div class="modal" id="authModal"><div class="modal-box">
+ <div class="modal-head"><h2 id="authTitle">تسجيل دخول الطالب</h2><button class="close" id="closeAuth" aria-label="إغلاق">×</button></div>
+ <form class="auth-form" id="authForm">
+  <label id="nameWrap" style="display:none">اسم الطالب<input id="studentName" type="text" maxlength="60" placeholder="اكتب اسمك"></label>
+  <label>البريد الإلكتروني<input id="authEmail" type="email" autocomplete="email" required placeholder="name@example.com"></label>
+  <label>كلمة المرور<input id="authPassword" type="password" autocomplete="current-password" minlength="8" required placeholder="8 أحرف على الأقل"></label>
+  <button class="btn primary" id="authSubmit" type="submit">دخول</button>
+  <div class="auth-msg" id="authMessage" role="status"></div>
+ </form>
+ <button class="switch-auth" id="switchAuth" type="button">ليس لديك حساب؟ أنشئ حسابًا جديدًا</button>
+</div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL='https://jshrzdqqmzuwklxuluqn.supabase.co';
+const SUPABASE_KEY='sb_publishable_fr7M4KFxVyjADIe2c00SFw_mhtoDdkR';
+const supabaseClient=window.supabase?.createClient(SUPABASE_URL,SUPABASE_KEY);
+
+const $=id=>document.getElementById(id);
+$('menuBtn').addEventListener('click',()=>$('mobileMenu').classList.toggle('open'));
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>$('mobileMenu').classList.remove('open')));
+
+let authMode='login';
+function showAuth(mode='login'){
+ authMode=mode;
+ $('authTitle').textContent=mode==='signup'?'إنشاء حساب طالب جديد':'تسجيل دخول الطالب';
+ $('authSubmit').textContent=mode==='signup'?'إنشاء الحساب':'دخول';
+ $('nameWrap').style.display=mode==='signup'?'block':'none';
+ $('studentName').required=mode==='signup';
+ $('authPassword').autocomplete=mode==='signup'?'new-password':'current-password';
+ $('switchAuth').textContent=mode==='signup'?'لديك حساب بالفعل؟ سجل دخولك':'ليس لديك حساب؟ أنشئ حسابًا جديدًا';
+ $('authMessage').textContent='';
+ $('authModal').classList.add('show');
+}
+$('openAuth').addEventListener('click',()=>showAuth('login'));
+$('closeAuth').addEventListener('click',()=>$('authModal').classList.remove('show'));
+$('authModal').addEventListener('click',e=>{if(e.target===$('authModal'))$('authModal').classList.remove('show')});
+$('switchAuth').addEventListener('click',()=>showAuth(authMode==='login'?'signup':'login'));
+
+async function refreshAuth(){
+ if(!supabaseClient)return;
+ const {data}=await supabaseClient.auth.getSession();
+ const user=data?.session?.user;
+ $('userLabel').textContent=user?(user.user_metadata?.full_name||user.email):'زائر';
+ $('openAuth').style.display=user?'none':'inline-flex';
+ $('logoutBtn').style.display=user?'inline-flex':'none';
+}
+$('authForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ if(!supabaseClient){$('authMessage').textContent='خدمة تسجيل الدخول غير متاحة حاليًا. حدّث الصفحة وحاول مرة أخرى.';return}
+ const email=$('authEmail').value.trim();
+ const password=$('authPassword').value;
+ const button=$('authSubmit');
+ button.disabled=true;button.textContent='جاري التنفيذ...';$('authMessage').textContent='';
+ try{
+  if(authMode==='signup'){
+   const name=$('studentName').value.trim();
+   if(!name)throw new Error('اكتب اسم الطالب أولًا.');
+   const {data,error}=await supabaseClient.auth.signUp({email,password,options:{data:{full_name:name}}});
+   if(error)throw error;
+   if(data.session){
+    $('authMessage').textContent='تم إنشاء الحساب وتسجيل الدخول بنجاح 🎉';
+    await refreshAuth();setTimeout(()=>$('authModal').classList.remove('show'),1200);
+   }else{
+    $('authMessage').textContent='تم إنشاء الحساب. راجع بريدك الإلكتروني لتأكيد الحساب، ثم ارجع وسجّل الدخول.';
+   }
+  }else{
+   const {error}=await supabaseClient.auth.signInWithPassword({email,password});
+   if(error)throw error;
+   $('authMessage').textContent='تم تسجيل الدخول بنجاح 🎉';
+   await refreshAuth();setTimeout(()=>$('authModal').classList.remove('show'),900);
+  }
+ }catch(err){$('authMessage').textContent=err.message||'حصل خطأ. راجع البيانات وحاول مرة أخرى.'}
+ finally{button.disabled=false;button.textContent=authMode==='signup'?'إنشاء الحساب':'دخول'}
+});
+$('logoutBtn').addEventListener('click',async()=>{
+ if(!supabaseClient)return;
+ const {error}=await supabaseClient.auth.signOut();
+ if(error)alert(error.message);else await refreshAuth();
+});
+if(supabaseClient){
+ supabaseClient.auth.onAuthStateChange(()=>refreshAuth());
+ refreshAuth();
+}
+
+async function loadPublicResults(){
+ const host=$('publicResults');
+ if(!supabaseClient){host.textContent='تعذر الاتصال بخدمة النتائج حاليًا.';return}
+ const {data,error}=await supabaseClient.from('student_results').select('student_name,score,governorate,competition').eq('published',true).order('score',{ascending:false});
+ if(error){host.textContent='تعذر تحميل النتائج حاليًا. حاول مرة أخرى لاحقًا.';return}
+ if(!data?.length){host.innerHTML='<div class="empty">لسه مفيش نتائج منشورة. انتظروا إعلان المتفوقين قريبًا 🌟</div>';return}
+ host.replaceChildren();
+ data.forEach((r,i)=>{
+  const row=document.createElement('div');row.className='result-row';
+  const rank=document.createElement('strong');rank.textContent=['🥇','🥈','🥉'][i]||String(i+1)+'.';
+  const main=document.createElement('div');main.className='task-main';
+  const name=document.createElement('strong');name.textContent=r.student_name||'طالب';
+  const meta=document.createElement('div');meta.className='task-meta';meta.textContent=[r.governorate,r.competition].filter(Boolean).join(' • ');
+  main.append(name,meta);
+  const score=document.createElement('strong');score.textContent=(r.score??0)+' درجة';
+  row.append(rank,main,score);host.append(row);
+ });
+}
+loadPublicResults();
+
+let tasks=JSON.parse(localStorage.getItem('hamoStudyTasks')||'[]');
+let selectedDay='الكل';
+function saveTasks(){localStorage.setItem('hamoStudyTasks',JSON.stringify(tasks));renderTasks()}
+function renderTasks(){
+ const list=$('taskList');list.replaceChildren();
+ const visible=selectedDay==='الكل'?tasks:tasks.filter(t=>t.day===selectedDay);
+ if(!visible.length){list.innerHTML='<div class="empty">مفيش مهام في اليوم ده. ابدأ بإضافة مهمة 💪</div>'}
+ visible.forEach(t=>{
+  const row=document.createElement('div');row.className='task-row'+(t.done?' done':'');
+  const check=document.createElement('input');check.type='checkbox';check.className='task-check';check.checked=!!t.done;check.addEventListener('change',()=>{t.done=check.checked;saveTasks()});
+  const main=document.createElement('div');main.className='task-main';
+  const name=document.createElement('div');name.className='task-name';name.textContent=t.subject+' — '+t.title;
+  const meta=document.createElement('div');meta.className='task-meta';meta.textContent=t.day+' • '+t.time+' • '+t.duration+' دقيقة';
+  main.append(name,meta);
+  const del=document.createElement('button');del.className='task-delete';del.textContent='حذف';del.addEventListener('click',()=>{tasks=tasks.filter(x=>x.id!==t.id);saveTasks()});
+  row.append(check,main,del);list.append(row);
+ });
+ const done=tasks.filter(t=>t.done).length;const percent=tasks.length?Math.round(done/tasks.length*100):0;
+ $('progressText').textContent=percent+'% إنجاز';$('progressBar').style.width=percent+'%';$('taskCount').textContent=tasks.length+' مهمة';
+}
+$('studyForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ tasks.push({id:Date.now(),subject:$('taskSubject').value.trim(),title:$('taskTitle').value.trim(),day:$('taskDay').value,time:$('taskTime').value,duration:$('taskDuration').value,done:false});
+ e.target.reset();$('taskTime').value='16:00';$('taskDuration').value='60';saveTasks();
+});
+$('showAll').addEventListener('click',()=>{selectedDay='الكل';renderTasks()});
+$('clearDone').addEventListener('click',()=>{tasks=tasks.filter(t=>!t.done);saveTasks()});
+renderTasks();
+
+let timerSeconds=25*60,timerInitial=25*60,timerInterval=null;
+function updateTimer(){const m=String(Math.floor(timerSeconds/60)).padStart(2,'0');const s=String(timerSeconds%60).padStart(2,'0');$('timerDisplay').textContent=m+':'+s}
+$('timerStart').addEventListener('click',()=>{
+ if(timerInterval)return;
+ timerInterval=setInterval(()=>{
+  if(timerSeconds>0){timerSeconds--;updateTimer()}
+  else{clearInterval(timerInterval);timerInterval=null;$('timerLabel').textContent='انتهى الوقت! أحسنت 👏';}
+ },1000);
+});
+$('timerPause').addEventListener('click',()=>{clearInterval(timerInterval);timerInterval=null});
+$('timerReset').addEventListener('click',()=>{clearInterval(timerInterval);timerInterval=null;timerSeconds=timerInitial;$('timerLabel').textContent='وقت التركيز';updateTimer()});
+document.querySelectorAll('.timer-mode').forEach(b=>b.addEventListener('click',()=>{
+ clearInterval(timerInterval);timerInterval=null;
+ document.querySelectorAll('.timer-mode').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+ timerInitial=Number(b.dataset.minutes)*60;timerSeconds=timerInitial;$('timerLabel').textContent=b.dataset.label;updateTimer();
+}));
+</script>
+</body>
+</html>
